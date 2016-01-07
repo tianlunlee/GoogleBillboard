@@ -15,10 +15,10 @@ public void draw()
   while (!prime) {
     String digits = e.substring( x, y);
     num = Double.parseDouble(digits);
-    System.out.println(num);
+   
 
     isPrime(num);
-    System.out.println(prime);
+    
     x++;
     y++;  
   }
@@ -34,6 +34,7 @@ public boolean isPrime(double dNum)
     }
   }
   prime = true;
+  System.out.println(num +" is prime");
   return prime;
     //to be finished later   
 
